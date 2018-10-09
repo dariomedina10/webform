@@ -62,7 +62,7 @@
                 
 
                 <asp:MenuItem NavigateUrl="~/FACTURACION.aspx" Text="CARGOS" Value="FACTURACION">
-                     <asp:MenuItem NavigateUrl="~/Ingresar Colores.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/Ingresar Cargos.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
