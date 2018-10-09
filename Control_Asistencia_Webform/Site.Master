@@ -77,7 +77,7 @@
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="LISTADO GENERAL" Value="Ingresar Provedores"></asp:MenuItem>
                 </asp:MenuItem>
                 <asp:MenuItem NavigateUrl="~/CATALOGOS.aspx" Text="DEPARTAMENTOS" Value="CATALOGOS">
-                      <asp:MenuItem NavigateUrl="~/Ingresar Colores.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
+                      <asp:MenuItem NavigateUrl="~/Ingresar_departamentos.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
