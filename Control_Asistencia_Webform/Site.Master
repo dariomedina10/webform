@@ -99,6 +99,7 @@
                     </asp:MenuItem>
                 
                   <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="TURNOS" Value="Ingresar Bodegas">
+                         <asp:MenuItem NavigateUrl="~/Ingresar turnos.aspx" Text="NUEVO" Value="Ingresar Bodegas"></asp:MenuItem>
                    <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
