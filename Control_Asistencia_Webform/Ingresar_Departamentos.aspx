@@ -25,7 +25,7 @@
                 <td style="WIDTH: 25%">
                    <strong>Código de Departamento</strong> </td>
                 <td style="WIDTH: 50%">
-                    <asp:TextBox ID="codigo" runat="server" Enabled="False" Width="300px" ></asp:TextBox>
+                    <asp:TextBox ID="codigo" runat="server" Enabled="False" Width="300px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
