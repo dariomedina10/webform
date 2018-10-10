@@ -107,35 +107,67 @@ namespace Control_Asistencia_Webform
                 combo_cargos();
                 combo_departamentos();
                 combo_tipo_empleado();
-              //  Label1.Visible = false;
+               Label1.Visible = false;
             }
         }
 
 
 
         //evento del botón
-        protected void Button1_Click(object sender, EventArgs e)
+        //protected void Button4_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+        //        {
+        //            Label1.Visible = true;
+        //            SqlCommand cmd = new SqlCommand("INSERT_empleados", Conexion);
+        //            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+        //            cmd.Parameters.Add("@id_empl", SqlDbType.BigInt).Value = cedula.Text;
+        //            cmd.Parameters.Add("@nombres", System.Data.SqlDbType.VarChar).Value = nom.Text;
+        //            cmd.Parameters.Add("@apelli", System.Data.SqlDbType.VarChar).Value = ape.Text;
+        //            cmd.Parameters.Add("@id_cargo", SqlDbType.Int).Value = cargo.DataValueField;
+        //            cmd.Parameters.Add("@id_depto", SqlDbType.Int).Value = depto.DataValueField;
+        //            cmd.Parameters.Add("@fecha_ingreso", SqlDbType.DateTime).Value = fecha_ingreso.Text;
+        //            cmd.Parameters.Add("@id_tipo_empl", SqlDbType.Int).Value = tipo_empl.DataValueField;
+        //            Conexion.Open();
+        //            cmd.ExecuteNonQuery();
+        //            Conexion.Close();
+        //            Label1.Text = "Empleado Insertado Exitosamente";
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //     Label1.Text = "Empleado No Insertado" + ex.Message;
+        //    }
+        //}
+
+        protected void Button4_Click1(object sender, EventArgs e)
         {
             try
             {
                 SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
                 {
-                    //Label1.Visible = true;
-                    SqlCommand cmd = new SqlCommand("INSERT_turnos", Conexion);
+                    Label1.Visible = true;
+                    SqlCommand cmd = new SqlCommand("INSERT_empleados", Conexion);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@id_turno", SqlDbType.Int).Value = 0;
-                    //cmd.Parameters.Add("@descr", System.Data.SqlDbType.VarChar).Value = descripcion.Text;
+                    cmd.Parameters.Add("@id_empl", SqlDbType.BigInt).Value = cedula.Text;
+                    cmd.Parameters.Add("@nombres", System.Data.SqlDbType.VarChar).Value = nom.Text;
+                    cmd.Parameters.Add("@apelli", System.Data.SqlDbType.VarChar).Value = ape.Text;
+                    cmd.Parameters.Add("@id_cargo", SqlDbType.Int).Value = cargo.SelectedIndex + 1;
+                    cmd.Parameters.Add("@id_depto", SqlDbType.Int).Value = depto.SelectedIndex + 1;
+                    cmd.Parameters.Add("@fecha_ingreso", SqlDbType.DateTime).Value = fecha_ingreso.Text;
+                    cmd.Parameters.Add("@id_tipo_empl", SqlDbType.Int).Value = tipo_empl.SelectedIndex + 1;
                     Conexion.Open();
                     cmd.ExecuteNonQuery();
                     Conexion.Close();
-                    //Label1.Text = "Turno Insertado Exitosamente";
+                    Label1.Text = "Empleado Insertado Exitosamente";
                 }
             }
             catch (Exception ex)
             {
-              //  Label1.Text = "Turno No Insertado" + ex.Message;
+                Label1.Text = "Empleado No Insertado" + ex.Message;
             }
         }
-
     }
 }

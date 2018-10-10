@@ -47,11 +47,11 @@
                 <td style="WIDTH: 25%">
                     Apellidos </td>
                 <td style="WIDTH: 50%">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
+                    <asp:TextBox ID="ape" runat="server" Width="300px"></asp:TextBox>
                 </td>
                 <td style="WIDTH: 25%">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
-                        ControlToValidate="TextBox1" ErrorMessage="RequiredFieldValidator">Debe ingresar Apellidos</asp:RequiredFieldValidator>
+                        ControlToValidate="ape" ErrorMessage="RequiredFieldValidator">Debe ingresar Apellidos</asp:RequiredFieldValidator>
                 </td>
 
             </tr>
@@ -109,13 +109,18 @@
         </table>
     </p>
     <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" Text="Procesar" Width="97px" />
+       
+        <asp:Button ID="Button4" runat="server" Text="Procesar" Width="97px" OnClick="Button4_Click1" />
+       
     &nbsp;<asp:Button ID="Button2" runat="server" Text="Limpiar" Width="97px" />
     &nbsp;<asp:Button ID="Button3" runat="server" Text="Salir" Width="97px" />
     &nbsp;</p>
     <p>
+        &nbsp;&nbsp;
         &nbsp;</p>
     <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </p>
     <p>
     </p>
