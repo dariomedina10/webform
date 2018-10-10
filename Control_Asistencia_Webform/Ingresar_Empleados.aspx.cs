@@ -17,6 +17,84 @@ namespace Control_Asistencia_Webform
         public bool IsPostback { get; private set; }
         int valor;
 
+    
+        public void combo_cargos()
+        {
+          
+
+            SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            {
+              string sql = "SELECT id_cargo, descripcion FROM cargos";
+
+               using (SqlCommand cmd = new SqlCommand(sql, Conexion))
+               {
+                        Conexion.Open();
+
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    sda.Fill(ds);
+                    cargo.DataSource = ds;
+                    cargo.DataTextField = "descripcion";                            // FieldName of Table in DataBase
+                    cargo.DataValueField = "id_cargo";
+                    cargo.DataBind();
+                    
+                            Conexion.Close();
+                }
+
+            }
+        }
+        public void combo_departamentos()
+        {
+
+
+            SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            {
+                string sql = "SELECT id_depto, descripcion FROM departamentos";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Conexion))
+                {
+                    Conexion.Open();
+
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    sda.Fill(ds);
+                    depto.DataSource = ds;
+                    depto.DataTextField = "descripcion";                            // FieldName of Table in DataBase
+                    depto.DataValueField = "id_depto";
+                    depto.DataBind();
+
+                    Conexion.Close();
+                }
+
+            }
+        }
+
+        public void combo_tipo_empleado()
+        {
+
+
+            SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            {
+                string sql = "SELECT id_tipo_empl, descripcion FROM tipo_empleado";
+
+                using (SqlCommand cmd = new SqlCommand(sql, Conexion))
+                {
+                    Conexion.Open();
+
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    sda.Fill(ds);
+                    tipo_empl.DataSource = ds;
+                    tipo_empl.DataTextField = "descripcion";                            // FieldName of Table in DataBase
+                    tipo_empl.DataValueField = "id_tipo_empl";
+                    tipo_empl.DataBind();
+
+                    Conexion.Close();
+                }
+
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             DateTime fechahoy = DateTime.Now;
@@ -26,6 +104,9 @@ namespace Control_Asistencia_Webform
                 string val = fecha_ingreso.Text;
                 val = val.Substring(0, 10);
                 fecha_ingreso.Text = val;
+                combo_cargos();
+                combo_departamentos();
+                combo_tipo_empleado();
               //  Label1.Visible = false;
             }
         }

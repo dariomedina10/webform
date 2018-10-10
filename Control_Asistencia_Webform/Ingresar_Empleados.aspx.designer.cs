@@ -94,13 +94,13 @@ namespace Control_Asistencia_Webform {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFecha;
         
         /// <summary>
-        /// Control nucleo.
+        /// Control depto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList nucleo;
+        protected global::System.Web.UI.WebControls.DropDownList depto;
         
         /// <summary>
         /// Control RequiredFieldValidator8.
@@ -112,13 +112,13 @@ namespace Control_Asistencia_Webform {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control tipo_empl.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList tipo_empl;
         
         /// <summary>
         /// Control RequiredFieldValidator2.

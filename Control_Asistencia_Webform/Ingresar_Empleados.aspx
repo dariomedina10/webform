@@ -73,24 +73,24 @@
               <td class="style1">
                     Departamento</td>
                 <td class="style2">
-                    <asp:DropDownList ID="nucleo" runat="server" Width="280px">
+                    <asp:DropDownList ID="depto" runat="server" Width="280px">
                     </asp:DropDownList>
                 </td>
                 <td class="style1">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" 
-                        ControlToValidate="nucleo" Display="Static" ErrorMessage="Seleccione Departamento" 
+                        ControlToValidate="depto" Display="Static" ErrorMessage="Seleccione Departamento" 
                         InitialValue="Escoja Un Departamento"></asp:RequiredFieldValidator>
                 </td>
                  <tr>
                 <td class="style1">
                     Tipo de Empleado</td>
                 <td class="style2">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="280px">
+                    <asp:DropDownList ID="tipo_empl" runat="server" Width="280px">
                     </asp:DropDownList>
                 </td>
                 <td class="style1">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                        ControlToValidate="cargo" Display="Static" ErrorMessage="Seleccione Tipo de Empleado" 
+                        ControlToValidate="tipo_empl" Display="Static" ErrorMessage="Seleccione Tipo de Empleado" 
                         InitialValue="Escoja el Tipo de Empleado"></asp:RequiredFieldValidator>
                 </td>
                
