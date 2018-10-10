@@ -61,36 +61,36 @@
             <Items>
                 
                 
-                <asp:MenuItem NavigateUrl="~/Ingresar Cargos.aspx" Text="CARGOS" Value="FACTURACION">
-                     <asp:MenuItem NavigateUrl="~/Ingresar Cargos.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/" Text="CARGOS" Value="CARGOS">
+                     <asp:MenuItem NavigateUrl="~/Ingresar_Cargos.aspx" Text="NUEVO" Value="Ingresar Cargos"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="LISTADO GENERAL" Value="Ingresar Provedores"></asp:MenuItem>
                 </asp:MenuItem>
 
-                <asp:MenuItem NavigateUrl="~/INVENTARIO.aspx" Text="CONTROL DE ASISTENCIA" Value="INVENTARIO">
-                      <asp:MenuItem NavigateUrl="~/Ingresar Colores.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/" Text="CONTROL DE ASISTENCIA" Value="CONTROL DE ASISTENCIA">
+                      <asp:MenuItem NavigateUrl="~/Ingresar Colores.aspx" Text="NUEVO" Value="Ingresar Control"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="LISTADO GENERAL" Value="Ingresar Provedores"></asp:MenuItem>
                 </asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/CATALOGOS.aspx" Text="DEPARTAMENTOS" Value="CATALOGOS">
-                      <asp:MenuItem NavigateUrl="~/Ingresar_departamentos.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/" Text="DEPARTAMENTOS" Value="DEPARTAMENTOS">
+                      <asp:MenuItem NavigateUrl="~/Ingresar_departamentos.aspx" Text="NUEVO" Value="Ingresar Departamentos"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="LISTADO GENERAL" Value="Ingresar Provedores"></asp:MenuItem>
                 </asp:MenuItem>
-                <asp:MenuItem NavigateUrl="~/DATOS.aspx" Text="EMPLEADOS" Value="DATOS">
-                      <asp:MenuItem NavigateUrl="~/Ingresar Colores.aspx" Text="NUEVO" Value="Ingresar Colores"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/" Text="EMPLEADOS" Value="EMPLEADOS">
+                      <asp:MenuItem NavigateUrl="~/Ingresar_Empleados.aspx" Text="NUEVO" Value="Ingresar Empleados"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="LISTADO GENERAL" Value="Ingresar Provedores"></asp:MenuItem>
                       </asp:MenuItem>  
-                    <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="TIPO_EMPLEADO" Value="Ingresar Bodegas">
+                    <asp:MenuItem NavigateUrl="~/" Text="TIPO_EMPLEADO" Value="Ingresar Tipo Empleado">
                             <asp:MenuItem NavigateUrl="~/Ingresar_tipo_empleado.aspx" Text="NUEVO" Value="Ingresar Bodegas"></asp:MenuItem>
                    <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
@@ -98,8 +98,8 @@
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="LISTADO GENERAL" Value="Ingresar Provedores"></asp:MenuItem>
                     </asp:MenuItem>
                 
-                  <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="TURNOS" Value="Ingresar Bodegas">
-                         <asp:MenuItem NavigateUrl="~/Ingresar turnos.aspx" Text="NUEVO" Value="Ingresar Bodegas"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/" Text="TURNOS" Value="Ingresar Turnos">
+                         <asp:MenuItem NavigateUrl="~/Ingresar_turnos.aspx" Text="NUEVO" Value="Ingresar Turnos"></asp:MenuItem>
                    <asp:MenuItem NavigateUrl="~/Ingresar Bodegas.aspx" Text="CONSULTAR" Value="Ingresar Bodegas"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Marcas.aspx" Text="MODIFICAR" Value="MODIFICAR"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Ingresar Provedores.aspx" Text="ELIMINAR" Value="Ingresar Provedores"></asp:MenuItem>
