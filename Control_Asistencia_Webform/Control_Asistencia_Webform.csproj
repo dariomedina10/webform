@@ -144,6 +144,7 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Ingresar_Cargos.aspx" />
+    <Content Include="Ingresar_Control_Asistencia.aspx" />
     <Content Include="Ingresar_Departamentos.aspx" />
     <Content Include="Ingresar_Empleados.aspx" />
     <Content Include="ingresar_tipo_empleado.aspx" />
@@ -215,6 +216,13 @@
     </Compile>
     <Compile Include="Ingresar_Cargos.aspx.designer.cs">
       <DependentUpon>Ingresar_Cargos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar_Control_Asistencia.aspx.cs">
+      <DependentUpon>Ingresar_Control_Asistencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ingresar_Control_Asistencia.aspx.designer.cs">
+      <DependentUpon>Ingresar_Control_Asistencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ingresar_Departamentos.aspx.cs">
       <DependentUpon>Ingresar_Departamentos.aspx</DependentUpon>
