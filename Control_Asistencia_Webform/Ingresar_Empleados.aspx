@@ -59,7 +59,7 @@
                 <td class="style1">
                     Cargo</td>
                 <td class="style2">
-                    <asp:DropDownList ID="cargo" runat="server" Width="280px">
+                    <asp:DropDownList ID="cargo" runat="server" Width="280px" EnableViewState="true" >
                     </asp:DropDownList>
                 </td>
                 <td class="style1">

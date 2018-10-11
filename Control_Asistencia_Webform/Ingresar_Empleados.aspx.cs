@@ -15,9 +15,16 @@ namespace Control_Asistencia_Webform
     {
 
         public bool IsPostback { get; private set; }
-        int valor;
+        int valor1;
 
-    
+        protected void Cargo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            valor1 = cargo.SelectedIndex + 1;
+           // this.cargo.SelectedIndex = ((DropDownList)(sender)).SelectedValue.ToString();
+
+        }
+
+
         public void combo_cargos()
         {
           
@@ -114,33 +121,7 @@ namespace Control_Asistencia_Webform
 
 
         //evento del botón
-        //protected void Button4_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
-        //        {
-        //            Label1.Visible = true;
-        //            SqlCommand cmd = new SqlCommand("INSERT_empleados", Conexion);
-        //            cmd.CommandType = System.Data.CommandType.StoredProcedure;
-        //            cmd.Parameters.Add("@id_empl", SqlDbType.BigInt).Value = cedula.Text;
-        //            cmd.Parameters.Add("@nombres", System.Data.SqlDbType.VarChar).Value = nom.Text;
-        //            cmd.Parameters.Add("@apelli", System.Data.SqlDbType.VarChar).Value = ape.Text;
-        //            cmd.Parameters.Add("@id_cargo", SqlDbType.Int).Value = cargo.DataValueField;
-        //            cmd.Parameters.Add("@id_depto", SqlDbType.Int).Value = depto.DataValueField;
-        //            cmd.Parameters.Add("@fecha_ingreso", SqlDbType.DateTime).Value = fecha_ingreso.Text;
-        //            cmd.Parameters.Add("@id_tipo_empl", SqlDbType.Int).Value = tipo_empl.DataValueField;
-        //            Conexion.Open();
-        //            cmd.ExecuteNonQuery();
-        //            Conexion.Close();
-        //            Label1.Text = "Empleado Insertado Exitosamente";
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //     Label1.Text = "Empleado No Insertado" + ex.Message;
-        //    }
-        //}
+        
 
         protected void Button4_Click1(object sender, EventArgs e)
         {
