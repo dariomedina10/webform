@@ -14,7 +14,7 @@
      <form>
   <div class="form-group">
          <asp:GridView ID="grid_depto" runat="server"  CssClass="table table-hover table-striped" GridLines="None"
-    AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333">
+    AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" AllowPaging="True" PageSize="4">
                <AlternatingRowStyle BackColor="White" />
                <Columns>
         <asp:BoundField DataField="id_depto" HeaderText="Código del Departamento" Visible="true" />
