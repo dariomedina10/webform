@@ -13,6 +13,7 @@
     </center>
      <form>
   <div class="form-group">
+      <center>
          <asp:GridView ID="grid_depto" runat="server"  CssClass="table table-hover table-striped" GridLines="None"
     AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" AllowPaging="True" PageSize="4" OnPageIndexChanging="grid_depto_PageIndexChanging">
                <AlternatingRowStyle BackColor="White" />
@@ -23,6 +24,7 @@
     </Columns>
                  <PagerStyle HorizontalAlign="Center" ForeColor="White" />
                  </asp:GridView>
+</center>
  </div>
 
 </form>

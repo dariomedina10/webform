@@ -74,7 +74,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a href="Ingresar_Control_Asistencia.aspx">NUEVO</a></li>
-          <li><a href="#">LISTADO</a></li>
+          <li><a href="Listado_Asistencia.aspx">LISTADO</a></li>
           <li><a href="#">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
@@ -98,7 +98,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a href="Ingresar_Empleados.aspx">NUEVO</a></li>
-          <li><a href="#">LISTADO</a></li>
+          <li><a href="Listado_Empleados.aspx">LISTADO</a></li>
           <li><a href="#">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
@@ -110,7 +110,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a href="ingresar_tipo_empleado.aspx">NUEVO</a></li>
-          <li><a href="#">LISTADO</a></li>
+          <li><a href="Listado_Tipo_empleado.aspx">LISTADO</a></li>
           <li><a href="#">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
@@ -122,7 +122,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a href="Ingresar_Turnos.aspx">NUEVO</a></li>
-          <li><a href="#">LISTADO</a></li>
+          <li><a href="Listado_Turnos.aspx">LISTADO</a></li>
           <li><a href="#">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
