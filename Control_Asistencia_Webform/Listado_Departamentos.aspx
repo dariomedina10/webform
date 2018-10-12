@@ -1,16 +1,28 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Listado_Departamentos.aspx.cs" Inherits="Control_Asistencia_Webform.Listado_Departamentos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Listado_Departamentos.aspx.cs" MasterPageFile="~/Site.Master" Inherits="Control_Asistencia_Webform.Listado_Departamentos" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
+      <center>
+     <h2>
+      <body>
+  <p style="color:white";> <strong>Listado General de Departamentos</strong></p>
 </body>
-</html>
+
+        
+     </h2>       
+    </center>
+     <form>
+  <div class="form-group">
+         <asp:GridView ID="grid_depto" runat="server"  CssClass="table table-hover table-striped" GridLines="None"
+    AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333">
+               <AlternatingRowStyle BackColor="White" />
+               <Columns>
+        <asp:BoundField DataField="id_depto" HeaderText="Código del Departamento" Visible="true" />
+        <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
+       
+    </Columns>
+                 </asp:GridView>
+ </div>
+
+</form>
+</asp:Content>
