@@ -62,7 +62,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a href="Ingresar_Cargos.aspx">NUEVO</a></li>
-          <li><a href="#">LISTADO</a></li>
+          <li><a href="Listado_Cargos.aspx">LISTADO</a></li>
           <li><a href="#">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
