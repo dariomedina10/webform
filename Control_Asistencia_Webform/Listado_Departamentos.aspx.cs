@@ -21,6 +21,13 @@ namespace Control_Asistencia_Webform
             }
         }
 
+        protected void grid_depto_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            this.grid_depto.PageIndex = e.NewPageIndex;
+            
+            this.grid_depto.DataBind();
+        }
+
         public void cargar_grid()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
