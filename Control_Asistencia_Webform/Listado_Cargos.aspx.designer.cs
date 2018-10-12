@@ -13,12 +13,12 @@ namespace Control_Asistencia_Webform {
     public partial class Listado_Cargos {
         
         /// <summary>
-        /// Control dgvUsers.
+        /// Control grid_cargos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvUsers;
+        protected global::System.Web.UI.WebControls.GridView grid_cargos;
     }
 }

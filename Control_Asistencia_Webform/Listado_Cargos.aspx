@@ -17,17 +17,25 @@
   </body
    <form>
   <div class="form-group">
-
-      <asp:GridView ID="dgvUsers" runat="server" 
-    CssClass="table table-hover table-striped" GridLines="None" 
+      
+    <%--  <asp:GridView ID="grid_cargos" runat="server" --%>
+          <asp:GridView ID="grid_cargos" runat="server"  CssClass="table table-hover table-striped" GridLines="Horizontal"
     AutoGenerateColumns="False">
-    <Columns>
+               <Columns>
         <asp:BoundField DataField="id_cargo" HeaderText="Código del Cargo" Visible="false" />
-        <asp:BoundField DataField="descaripcion" HeaderText="Descripción" />
+        <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
        
     </Columns>
-    <RowStyle CssClass="cursor-pointer" />
-</asp:GridView>
+                 <RowStyle CssClass="cursor-pointer" />
+          </asp:GridView>
+   
+  <%--  <Columns>
+        <asp:BoundField DataField="id_cargo" HeaderText="Código del Cargo" Visible="false" />
+        <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
+       
+    </Columns>--%>
+ 
+
 
 
     <%--<label for="exampleInputEmail1">Email address</label>
@@ -42,6 +50,6 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>--%>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
 </asp:Content>
