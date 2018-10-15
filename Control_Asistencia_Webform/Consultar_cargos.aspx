@@ -16,9 +16,11 @@
       <center>
          <div class="form-group">
     <label for="exampleInputPassword1"></label>
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Codigo">
+   <%-- <input type="text"  id="clave" placeholder="Ingrese Codigo">--%>
+<asp:TextBox ID="clave" runat="server" placeholder="Ingrese Codigo" ></asp:TextBox>
              <br />
-             <asp:Button ID="Button2" runat="server" Text="Buscar" Width="97px" /> 
+             <br />
+             <asp:Button ID="Button2" runat="server" Text="Buscar" Width="97px" OnClick="Button2_Click" /> 
   </div>
          
          <asp:GridView ID="grid_cargos" runat="server"  CssClass="table table-hover table-striped" GridLines="None"
