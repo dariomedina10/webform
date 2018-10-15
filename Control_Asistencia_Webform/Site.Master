@@ -111,7 +111,7 @@
         <ul class="dropdown-menu">
           <li><a href="ingresar_tipo_empleado.aspx">NUEVO</a></li>
           <li><a href="Listado_Tipo_empleado.aspx">LISTADO</a></li>
-          <li><a href="#">CONSULTAR</a></li>        
+          <li><a href="consulta_tipo_empleado.aspx">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
         </ul>

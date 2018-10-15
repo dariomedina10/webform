@@ -131,6 +131,7 @@
     <Content Include="Consultar_cargos.aspx" />
     <Content Include="Consulta_Departamentos.aspx" />
     <Content Include="Consulta_empleados.aspx" />
+    <Content Include="consulta_tipo_empleado.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -222,6 +223,13 @@
     </Compile>
     <Compile Include="Consulta_empleados.aspx.designer.cs">
       <DependentUpon>Consulta_empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consulta_tipo_empleado.aspx.cs">
+      <DependentUpon>consulta_tipo_empleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consulta_tipo_empleado.aspx.designer.cs">
+      <DependentUpon>consulta_tipo_empleado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
