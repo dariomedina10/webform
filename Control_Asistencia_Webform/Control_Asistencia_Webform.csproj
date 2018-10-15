@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Consultar_cargos.aspx" />
+    <Content Include="consultar_turnos.aspx" />
     <Content Include="Consulta_Departamentos.aspx" />
     <Content Include="Consulta_empleados.aspx" />
     <Content Include="consulta_tipo_empleado.aspx" />
@@ -209,6 +210,13 @@
     </Compile>
     <Compile Include="Consultar_cargos.aspx.designer.cs">
       <DependentUpon>Consultar_cargos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultar_turnos.aspx.cs">
+      <DependentUpon>consultar_turnos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultar_turnos.aspx.designer.cs">
+      <DependentUpon>consultar_turnos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Consulta_Departamentos.aspx.cs">
       <DependentUpon>Consulta_Departamentos.aspx</DependentUpon>
