@@ -99,7 +99,7 @@
         <ul class="dropdown-menu">
           <li><a href="Ingresar_Empleados.aspx">NUEVO</a></li>
           <li><a href="Listado_Empleados.aspx">LISTADO</a></li>
-          <li><a href="#">CONSULTAR</a></li>        
+          <li><a href="Consulta_empleados.aspx">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
         </ul>
