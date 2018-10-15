@@ -1,0 +1,81 @@
+CREATE PROCEDURE [dbo].[validar_id_cargos] (@id int)
+as
+begin
+SELECT count(ID_cargo) as total FROM cargos WHERE id_cargo=@id
+end
+
+
+CREATE PROCEDURE [dbo].[validar_id_depto] (@id int)
+as
+begin
+
+SELECT count(ID_depto) as total FROM departamentos WHERE id_depto=@id
+end
+
+
+CREATE PROCEDURE [dbo].[validar_id_empleados] (@id bigint)
+as
+begin
+
+
+SELECT count(ID_empl) as total FROM empleados WHERE id_empl=@id
+end
+
+
+
+CREATE PROCEDURE [dbo].[validar_id_tipo_empleado] (@id int)
+as
+begin
+
+
+SELECT count(ID_tipo_empl) as total FROM tipo_empleado WHERE id_tipo_empl=@id
+end
+
+CREATE PROCEDURE [dbo].[validar_turnos] (@id int)
+as
+begin
+
+
+SELECT count(ID_turno) as total FROM turnos WHERE id_turno=@id
+end
+
+
+CREATE PROCEDURE [dbo].[mostrar_id_cargos] (@id int)
+as
+begin
+
+SELECT ID_cargo,descripcion FROM cargos WHERE id_cargo=@id
+end
+
+CREATE PROCEDURE [dbo].[mostrar_id_depto] (@id int)
+as
+begin
+
+SELECT id_depto,descripcion FROM departamentos WHERE id_depto=@id
+end
+
+
+CREATE PROCEDURE [dbo].[mostrar_id_empleado] (@id bigint)
+as
+begin
+
+
+SELECT *from  empleados WHERE id_empl=@id
+end
+
+
+CREATE PROCEDURE [dbo].[mostrar_id_tipo_empl] (@id int)
+as
+begin
+
+
+SELECT id_tipo_empl,descripcion from tipo_empleado WHERE id_tipo_empl=@id
+end
+
+CREATE PROCEDURE [dbo].[mostrar_id_turno] (@id int)
+as
+begin
+
+
+SELECT id_turno,descripcion from turnos WHERE id_turno=@id
+end
