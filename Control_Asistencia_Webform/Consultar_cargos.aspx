@@ -18,7 +18,7 @@
     <label for="exampleInputPassword1"></label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Codigo">
              <br />
-             <asp:Button ID="Button2" runat="server" Text="Buscar" Width="97px" />
+             <asp:Button ID="Button2" runat="server" Text="Buscar" Width="97px" /> 
   </div>
          
          <asp:GridView ID="grid_cargos" runat="server"  CssClass="table table-hover table-striped" GridLines="None"
