@@ -120,7 +120,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           TURNOS <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu"> 
           <li><a href="Ingresar_Turnos.aspx">NUEVO</a></li>
           <li><a href="Listado_Turnos.aspx">LISTADO</a></li>
           <li><a href="consultar_turnos.aspx">CONSULTAR</a></li>        
