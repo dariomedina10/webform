@@ -21,6 +21,7 @@
              <br />
              <br />
              <asp:Button ID="Button2" runat="server" Text="Buscar" Width="97px" OnClick="Button2_Click" /> 
+             <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
   </div>
          
          <asp:GridView ID="grid_depto" runat="server"  CssClass="table table-hover table-striped" GridLines="None"

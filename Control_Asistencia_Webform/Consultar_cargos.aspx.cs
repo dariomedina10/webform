@@ -17,8 +17,8 @@ namespace Control_Asistencia_Webform
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostback)
-            {   //consulta();
-               // cargar_grid();
+            {
+                Label1.Visible = false;
             }
         }
 
@@ -64,21 +64,26 @@ namespace Control_Asistencia_Webform
                 // {
                 total_ap = rdr.GetInt32(rdr.GetOrdinal("total"));
                 if (total_ap > 0)
-                    {
+                {
                     cargar_grid();
+                }
+                else
+                {
+                    Label1.Visible = true;
+                    Label1.Text = "No se ha encontrado Información con el código ingresado";
+                }
                 }
                 // }
                 conn.Close();
             
               
             }
-        }
 
         protected void Button2_Click(object sender, EventArgs e)
-
         {
             consulta();
-      
+        }
     }
-}
+
+  
 }
