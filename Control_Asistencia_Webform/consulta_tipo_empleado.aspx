@@ -28,7 +28,7 @@
     AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" AllowPaging="True" PageSize="4" OnPageIndexChanging="grid_tipo_PageIndexChanging">
                <AlternatingRowStyle BackColor="White" />
                <Columns>
-        <asp:BoundField DataField="id_depto" HeaderText="Código del Departamento" Visible="true" />
+        <asp:BoundField DataField="id_tipo_empl" HeaderText="Código del Departamento" Visible="true" />
         <asp:BoundField DataField="descripcion" HeaderText="Descripción" />
        
     </Columns>
