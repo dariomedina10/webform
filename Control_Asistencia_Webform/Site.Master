@@ -87,7 +87,7 @@
         <ul class="dropdown-menu">
           <li><a href="Ingresar_Departamentos.aspx">NUEVO</a></li>
           <li><a href="Listado_Departamentos.aspx">LISTADO</a></li>
-          <li><a href="#">CONSULTAR</a></li>        
+          <li><a href="Consulta_Departamentos.aspx">CONSULTAR</a></li>        
           <li><a href="#">MODIFICAR</a></li>
           <li><a href="#">ELIMINAR</a></li>
         </ul>
