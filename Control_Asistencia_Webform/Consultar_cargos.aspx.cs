@@ -33,17 +33,26 @@ namespace Control_Asistencia_Webform
             {
                 //invoco al sp para cargar el grid view
 
-                SqlCommand cmd = new SqlCommand("buscar_info", conn);
+                SqlCommand cmd = new SqlCommand("validar_id_cargos", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@nom", SqlDbType.VarChar).Value = "cargos";
-                cmd.Parameters.Add("@nombreid", SqlDbType.VarChar).Value = "id";
-                cmd.Parameters.Add("@id", SqlDbType.VarChar).Value = "4";
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
 
-                grid_cargos.DataSource = dt;
-                grid_cargos.DataBind();
+                cmd.Parameters.AddWithValue("@id", 1);
+                conn.Open();
+                SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                int total_ap = 0;
+                rdr.Read();
+                //while(rdr.Read())    // En caso de que exista varios valores de retorno sin usar DataTable
+                // {
+                total_ap = rdr.GetInt32(rdr.GetOrdinal("total"));
+                // }
+                conn.Close();
+            
+                //SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //DataTable dt = new DataTable();
+                //da.Fill(dt);
+
+                //grid_cargos.DataSource = dt;
+                //grid_cargos.DataBind();
             }
         }
 
