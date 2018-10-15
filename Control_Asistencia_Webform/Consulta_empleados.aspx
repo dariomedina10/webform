@@ -24,8 +24,8 @@
              <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
   </div>
          
-         <asp:GridView ID="grid_depto" runat="server"  CssClass="table table-hover table-striped" GridLines="None"
-    AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" AllowPaging="True" PageSize="4" OnPageIndexChanging="grid_cargos_PageIndexChanging">
+         <asp:GridView ID="grid_empl" runat="server"  CssClass="table table-hover table-striped" GridLines="None"
+    AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" AllowPaging="True" PageSize="4" OnPageIndexChanging="grid_empl_PageIndexChanging">
                <AlternatingRowStyle BackColor="White" />
                <Columns>
         <asp:BoundField DataField="id_empl" HeaderText="Cédula del Empleado" Visible="true" />
