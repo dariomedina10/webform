@@ -15,10 +15,14 @@
  <div class="form-group">
      <center>
          <asp:TextBox ID="id_cargo" runat="server" CssClass="table table-hover table-striped" placeholder="Ingrese Codigo"></asp:TextBox> <br />
-         <asp:TextBox ID="descrip" runat="server" CssClass="table table-hover table-striped" placeholder="Descripción"></asp:TextBox>
+         <asp:TextBox ID="descrip" runat="server" CssClass="table table-hover table-striped" placeholder="Descripción"></asp:TextBox> <br />
+         <asp:Button ID="buscar" runat="server" Text="Buscar" Width="97px" CssClass="table table-hover table-striped" /> 
+         <asp:Button ID="modificar" runat="server" Text="Modificar" Width="97px" CssClass="table table-hover table-striped" /> 
+          <asp:Button ID="eliminar" runat="server" Text="Eliminar" Width="97px" CssClass="table table-hover table-striped"  /> 
      </center>
  </div>
 
 </form>
 </asp:Content>
+
 
