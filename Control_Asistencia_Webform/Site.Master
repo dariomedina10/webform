@@ -64,8 +64,8 @@
           <li><a href="Ingresar_Cargos.aspx">NUEVO</a></li>
           <li><a href="Listado_Cargos.aspx">LISTADO</a></li>
           <li><a href="Consultar_cargos.aspx">CONSULTAR</a></li>        
-          <li><a href="#">MODIFICAR</a></li>
-          <li><a href="#">ELIMINAR</a></li>
+          <li><a href="Gestion_cargos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
+        
         </ul>
       </li>
         <li class="dropdown">
@@ -88,8 +88,7 @@
           <li><a href="Ingresar_Departamentos.aspx">NUEVO</a></li>
           <li><a href="Listado_Departamentos.aspx">LISTADO</a></li>
           <li><a href="Consulta_Departamentos.aspx">CONSULTAR</a></li>        
-          <li><a href="#">MODIFICAR</a></li>
-          <li><a href="#">ELIMINAR</a></li>
+          <li><a href="Gestion_cargos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
         </ul>
       </li>
         <li class="dropdown">
@@ -100,8 +99,7 @@
           <li><a href="Ingresar_Empleados.aspx">NUEVO</a></li>
           <li><a href="Listado_Empleados.aspx">LISTADO</a></li>
           <li><a href="Consulta_empleados.aspx">CONSULTAR</a></li>        
-          <li><a href="#">MODIFICAR</a></li>
-          <li><a href="#">ELIMINAR</a></li>
+          <li><a href="Gestion_cargos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
         </ul>
       </li>
         <li class="dropdown">
@@ -112,8 +110,7 @@
           <li><a href="ingresar_tipo_empleado.aspx">NUEVO</a></li>
           <li><a href="Listado_Tipo_empleado.aspx">LISTADO</a></li>
           <li><a href="consulta_tipo_empleado.aspx">CONSULTAR</a></li>        
-          <li><a href="#">MODIFICAR</a></li>
-          <li><a href="#">ELIMINAR</a></li>
+          <li><a href="Gestion_cargos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
         </ul>
       </li>
         <li class="dropdown">
@@ -124,8 +121,7 @@
           <li><a href="Ingresar_Turnos.aspx">NUEVO</a></li>
           <li><a href="Listado_Turnos.aspx">LISTADO</a></li>
           <li><a href="consultar_turnos.aspx">CONSULTAR</a></li>        
-          <li><a href="#">MODIFICAR</a></li>
-          <li><a href="#">ELIMINAR</a></li>
+          <li><a href="Gestion_cargos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
         </ul>
       </li>
     </ul>
