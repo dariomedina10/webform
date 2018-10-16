@@ -16,7 +16,7 @@
      <center>
          <asp:TextBox ID="clave" runat="server" CssClass="table table-hover table-striped" placeholder="Ingrese Codigo"></asp:TextBox> <br />
          <asp:TextBox ID="descrip" runat="server" CssClass="table table-hover table-striped" placeholder="Descripción"></asp:TextBox> <br />
-         <asp:Button ID="buscar" runat="server" Text="Buscar" Width="97px" CssClass="table table-hover table-striped" /> 
+         <asp:Button ID="buscar" runat="server" Text="Buscar" Width="97px" CssClass="table table-hover table-striped" OnClick="buscar_Click" /> 
          <asp:Button ID="modificar" runat="server" Text="Modificar" Width="97px" CssClass="table table-hover table-striped" /> 
           <asp:Button ID="eliminar" runat="server" Text="Eliminar" Width="97px" CssClass="table table-hover table-striped"  /> 
           <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White" CssClass="table table-hover table-striped" ></asp:Label>

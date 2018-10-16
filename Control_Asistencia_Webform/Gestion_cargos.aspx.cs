@@ -40,8 +40,7 @@ namespace Control_Asistencia_Webform
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                //grid_depto.DataSource = dt;
-                //grid_depto.DataBind();
+             
             }
         }
         public void consulta()
@@ -49,41 +48,47 @@ namespace Control_Asistencia_Webform
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
             {
                 //invoco al sp para cargar el grid view
-
-                SqlCommand cmd = new SqlCommand("validar_id_depto", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@id", clave.Text);
-                conn.Open();
-                SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                int total_ap = 0;
-                rdr.Read();
-                //while(rdr.Read())    // En caso de que exista varios valores de retorno sin usar DataTable
-                // {
-                total_ap = rdr.GetInt32(rdr.GetOrdinal("total"));
-                if (total_ap > 0)
+                try
                 {
-                    cargar_grid();
+                    SqlCommand cmd = new SqlCommand("validar_id_cargos", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@id", clave.Text);
+                    conn.Open();
+                    SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                    int total_ap = 0;
+                    rdr.Read();
+                    if (rdr.Read())   
+                    {
+                        descrip.Text = (string)rdr["descripcion"]; ;
+                        total_ap = rdr.GetInt32(rdr.GetOrdinal("total"));
+                        if (total_ap > 0)
+                        {
+                            Response.Write("atrapado");
+                            modificar.Enabled = true;
+                            eliminar.Enabled = true;
+                        }
+                        else
+                        {
+                            Label1.Visible = true;
+                            Label1.Text = "No se ha encontrado Información con el código ingresado";
+
+                        }
+                        
+                        conn.Close();
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
                     Label1.Visible = true;
-                    Label1.Text = "No se ha encontrado Información con el código ingresado";
-
+                    Label1.Text = "Problemas en la conexión" + ex.Message;
                 }
-                // }
-                conn.Close();
-
-
             }
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-
+        protected void buscar_Click(object sender, EventArgs e)
         {
             consulta();
-
         }
-
     }
     }
