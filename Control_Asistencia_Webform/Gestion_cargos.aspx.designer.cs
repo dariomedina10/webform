@@ -13,13 +13,13 @@ namespace Control_Asistencia_Webform {
     public partial class Gestion_cargos {
         
         /// <summary>
-        /// Control id_cargo.
+        /// Control clave.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_cargo;
+        protected global::System.Web.UI.WebControls.TextBox clave;
         
         /// <summary>
         /// Control descrip.
@@ -56,5 +56,14 @@ namespace Control_Asistencia_Webform {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button eliminar;
+        
+        /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }
