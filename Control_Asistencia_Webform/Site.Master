@@ -121,7 +121,7 @@
           <li><a href="Ingresar_Turnos.aspx">NUEVO</a></li>
           <li><a href="Listado_Turnos.aspx">LISTADO</a></li>
           <li><a href="consultar_turnos.aspx">CONSULTAR</a></li>        
-          <li><a href="Gestion_cargos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
+          <li><a href="gestion_turnos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
         </ul>
       </li>
     </ul>
