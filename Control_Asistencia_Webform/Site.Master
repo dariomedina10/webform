@@ -110,7 +110,7 @@
           <li><a href="ingresar_tipo_empleado.aspx">NUEVO</a></li>
           <li><a href="Listado_Tipo_empleado.aspx">LISTADO</a></li>
           <li><a href="consulta_tipo_empleado.aspx">CONSULTAR</a></li>        
-          <li><a href="Gestion_cargos.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
+          <li><a href="gestion_tipo_empleado.aspx">GESTIÓN (MODIFICAR-ELIMINAR)</a></li>
         </ul>
       </li>
         <li class="dropdown">

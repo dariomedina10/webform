@@ -142,6 +142,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Gestion_cargos.aspx" />
     <Content Include="gestion_departamentos.aspx" />
+    <Content Include="gestion_tipo_empleado.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -268,6 +269,13 @@
     </Compile>
     <Compile Include="gestion_departamentos.aspx.designer.cs">
       <DependentUpon>gestion_departamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_tipo_empleado.aspx.cs">
+      <DependentUpon>gestion_tipo_empleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestion_tipo_empleado.aspx.designer.cs">
+      <DependentUpon>gestion_tipo_empleado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
