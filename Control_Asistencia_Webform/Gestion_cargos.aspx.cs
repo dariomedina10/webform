@@ -21,40 +21,66 @@ namespace Control_Asistencia_Webform
                 Label1.Visible = false;
                 Button1.Enabled = false;
                 Button3.Enabled = false;
-                // cargar_grid();
+
             }
         }
 
-     
-
-      
-        public void consulta_muestra()
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            try
             {
-            
-                try
-                {
-                    SqlCommand cmd = new SqlCommand("mostrar_id_cargos", conn);
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-                    cmd.Parameters.AddWithValue("@id", clave.Text);
-                    conn.Open();
-                    SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                
-                    rdr.Read();
-                    if (rdr.Read())
-                    {
-                        descrip.Text = (string)rdr["descripcion"];   
-                        conn.Close();
-                    }
-                }
-                catch (Exception ex)
+                SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
                 {
                     Label1.Visible = true;
-                    Label1.Text = "Problemas en la conexión" + ex.Message;
+                    SqlCommand cmd = new SqlCommand("update_CARGOS", Conexion);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@id_cargo", SqlDbType.Int).Value = clave.Text;
+                    cmd.Parameters.Add("@descr", System.Data.SqlDbType.VarChar).Value = descrip.Text;
+                    Conexion.Open();
+                    cmd.ExecuteNonQuery();
+                    Conexion.Close();
+                    Label1.Visible = true;
+                    Label1.Text = "Cargo Modificado Exitosamente";
                 }
             }
+            catch (Exception ex)
+            {
+                Label1.Visible = true;
+                Label1.Text = "Cargo No Modificado" + ex.Message;
+            }
+        }
+    
+
+
+
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection Conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+                {
+                    Label1.Visible = true;
+                    SqlCommand cmd = new SqlCommand("delete_tabla", Conexion);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@nom", SqlDbType.VarChar).Value = "cargos";
+                    cmd.Parameters.Add("@nombre_campo_id", SqlDbType.VarChar).Value = "id_cargo";
+                    cmd.Parameters.Add("@valor_id", System.Data.SqlDbType.Int).Value = clave.Text;
+                    Conexion.Open();
+                    cmd.ExecuteNonQuery();
+                    Conexion.Close();
+                    clave.Text = "";
+                    descrip.Text ="";
+                    Label1.Visible = true;
+                    Label1.Text = "Cargo Eliminado Exitosamente";
+                }
+            }
+            catch (Exception ex)
+            {
+                Label1.Visible = true;
+                Label1.Text = "Cargo No Eliminado" + ex.Message;
+            }
+
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -69,12 +95,9 @@ namespace Control_Asistencia_Webform
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id", Convert.ToInt32(clave.Text));
                     conn.Open();
-                    total_ap = Convert.ToInt32(cmd.ExecuteScalar());
-                        //descrip.Text = (string)rdr["descripcion"];
+                    total_ap = Convert.ToInt32(cmd.ExecuteScalar());                      
                         //descrip.Text = Convert.ToString(rdr["descripcion"]);
                         //  descrip.Text = (int)rdr["descripcion"];
-                        //   total_ap = rdr.GetInt32(rdr.GetOrdinal("total"));
-
                         // descrip.Text = rdr["descripcion"].ToString();
                         if (total_ap > 0)
                         {
@@ -89,7 +112,7 @@ namespace Control_Asistencia_Webform
                         SqlDataReader rdr2 = cmd2.ExecuteReader();
                         try
                         {
-                           // rdr2.Read();
+                         
                         if (rdr2.Read())
                         {
                             descrip.Text = (string)rdr2["descripcion"];
