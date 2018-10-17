@@ -23,12 +23,7 @@ namespace Control_Asistencia_Webform
             }
         }
 
-        protected void grid_cargos_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            this.grid_depto.PageIndex = e.NewPageIndex;
-            //LLenarDatosConsejera();
-            this.grid_depto.DataBind();
-        }
+     
 
         public void cargar_grid()
         {

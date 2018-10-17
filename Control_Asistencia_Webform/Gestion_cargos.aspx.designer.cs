@@ -31,31 +31,31 @@ namespace Control_Asistencia_Webform {
         protected global::System.Web.UI.WebControls.TextBox descrip;
         
         /// <summary>
-        /// Control buscar.
+        /// Control Button2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buscar;
+        protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// Control modificar.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button modificar;
+        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Control eliminar.
+        /// Control Button3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button eliminar;
+        protected global::System.Web.UI.WebControls.Button Button3;
         
         /// <summary>
         /// Control Label1.
