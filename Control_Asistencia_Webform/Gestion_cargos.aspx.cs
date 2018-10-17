@@ -28,7 +28,7 @@ namespace Control_Asistencia_Webform
      
 
       
-        public void consulta()
+        public void consulta_muestra()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
             {
@@ -81,9 +81,30 @@ namespace Control_Asistencia_Webform
                         
                             Button1.Enabled = true;
                             Button3.Enabled = true;
-                        consulta();
+
+                        //rutina para mostrar la descripcion en el textbox
+                        SqlCommand cmd2 = new SqlCommand("mostrar_id_cargos", conn);
+                        cmd2.CommandType = CommandType.StoredProcedure;
+                        cmd2.Parameters.AddWithValue("@id", clave.Text);
+                        SqlDataReader rdr2 = cmd2.ExecuteReader();
+                        try
+                        {
+                           // rdr2.Read();
+                        if (rdr2.Read())
+                        {
+                            descrip.Text = (string)rdr2["descripcion"];
+                           
                         }
-                        else
+                        }
+                        catch (Exception ex)
+                        {
+                            Label1.Visible = true;
+                            Label1.Text = "Problemas en la conexión" + ex.Message;
+                        }
+
+
+                    }
+                    else
                         {
                             Label1.Visible = true;
                             Label1.Text = "No se ha encontrado Información con el código ingresado";
