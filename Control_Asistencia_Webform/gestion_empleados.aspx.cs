@@ -21,6 +21,9 @@ namespace Control_Asistencia_Webform
                 Label1.Visible = false;
                 Button1.Enabled = false;
                 Button3.Enabled = false;
+                //atributos javascript para la confirmacion antes de modificar y eliminar
+                Button1.Attributes.Add("onclick", "javascript :if(confirm('¿Esta seguro de modificar la Información? ')== false) return false;");
+                Button3.Attributes.Add("onclick", "javascript :if(confirm('¿Está seguro de eliminar este registro? ')== false) return false;");
 
             }
         }
